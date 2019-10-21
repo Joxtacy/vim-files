@@ -130,9 +130,9 @@ augroup filetype_javascript
     " Clear autocmds in this group
     autocmd!
     " Comment
-    autocmd FileType javascript nnoremap <Buffer> <LocalLeader>c I//<ESC>
+    autocmd FileType javascript nnoremap <buffer> <LocalLeader>c I//<ESC>
     " Autoindent
-    autocmd BufWritePre *js :normal gg=G
+    autocmd BufWritePre *.js normal gg=G
 
     " Set fold method to syntax when file syntax is javascript
     autocmd Syntax javascript setlocal foldmethod=syntax
@@ -140,8 +140,8 @@ augroup filetype_javascript
     autocmd Syntax javascript normal zR
 
     " Not that useful, but hey. ¯\_(ツ)_/¯
-    autocmd FileType javascript iabbrev <Buffer> iff if () {<CR>}<C-o>k<C-o>f)
-    autocmd FileType javascript iabbrev <Buffer> func function ()
+    autocmd FileType javascript :iabbrev <buffer> iff if () {<CR>}<C-o>k<C-o>f)
+    autocmd FileType javascript :iabbrev <buffer> func function ()
 augroup END
 " }}}
 
@@ -150,13 +150,11 @@ augroup filetype_html
     " Clear autocmds in this group
     autocmd!
     " Autoindent
-    autocmd BufWritePre *.html :normal gg=G
+    autocmd BufWritePre *.html normal gg=G
     " Comment
-    autocmd FileType html nnoremap <Buffer> <LocalLeader>c I<!-- <ESC>A --><ESC>
+    autocmd FileType html nnoremap <buffer> <LocalLeader>c I<!-- <ESC>A --><ESC>
     " Create fold on current tag
-    autocmd FileType html nnoremap <Buffer> <LocalLeader>f Vatzf
-    " Toggle fold
-    autocmd FileType html nnoremap <Buffer> <Space> za
+    autocmd FileType html nnoremap <buffer> <LocalLeader>f Vatzf
 augroup END
 " }}}
 
@@ -165,7 +163,7 @@ augroup filetype_python
     " Clear autocmds in this group
     autocmd!
     " Comment
-    autocmd FileType python nnoremap <Buffer> <LocalLeader>c I#<ESC>
+    autocmd FileType python nnoremap <buffer> <LocalLeader>c I#<ESC>
 augroup END
 " }}}
 
