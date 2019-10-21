@@ -86,6 +86,9 @@ nnoremap <Leader>ev :vsplit $MYVIMRC<CR>
 " Mapping to source .vimrc
 nnoremap <Leader>sv :source $MYVIMRC<CR>
 
+" Open previous buffer to the right in vertical split
+nnoremap <Leader>spb :<C-u>execute "rightbelow vsplit " . bufname("#")<CR>
+
 " Mapping to wrap selection in double quotes
 vnoremap <Leader>" <ESC>`>a"<ESC>`<i"<ESC>lel
 
