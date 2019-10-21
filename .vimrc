@@ -93,7 +93,7 @@ onoremap an{ :<C-u>execute "normal! \/\{\r:noh\rva{"<CR>
 omap an} an{
 
 " Motion to select next email
-onoremap in@ :execute "normal! /\\S\\+@\\S\\+\r:noh\rviW"<CR>
+onoremap in@ :<C-u>execute "normal! /\\S\\+@\\S\\+\r:noh\rviW"<CR>
 
 " Arrow keys are forbidden!
 noremap <Left> <NOP>
@@ -190,14 +190,14 @@ let g:gutentags_cache_dir='~/gutentags'
 " Coc configuration ---------------------------- {{{
 " use <tab> for trigger completion and navigate to the next complete item
 function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~ '\s'
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~ '\s'
 endfunction
 
 inoremap <silent><expr> <Tab>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<Tab>" :
-      \ coc#refresh()
+            \ pumvisible() ? "\<C-n>" :
+            \ <SID>check_back_space() ? "\<Tab>" :
+            \ coc#refresh()
 " }}}
 
 " Gitgutter configuration ---------------------- {{{
