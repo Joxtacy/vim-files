@@ -19,6 +19,14 @@ Plug 'evanleck/vim-svelte'
 
 call plug#end()
 
+" Custom functions ----------------------------- {{{
+" Indents file and puts the cursor back to where it was
+function IndentFile()
+    normal! gg=G
+    normal! ``
+endfunction
+" }}}
+
 " Basic settings ------------------------------- {{{
 syntax on
 
@@ -132,7 +140,7 @@ augroup filetype_javascript
     " Comment
     autocmd FileType javascript nnoremap <buffer> <LocalLeader>c I//<ESC>
     " Autoindent
-    autocmd BufWritePre *.js normal gg=G
+    autocmd BufWritePre *.js call IndentFile()
 
     " Set fold method to syntax when file syntax is javascript
     autocmd Syntax javascript setlocal foldmethod=syntax
