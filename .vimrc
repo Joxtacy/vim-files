@@ -117,6 +117,7 @@ noremap <Down> <NOP>
 " }}}
 
 " Random abbreviations ------------------------- {{{
+iabbrev shrug ¯\_(ツ)_/¯
 iabbrev teh the
 iabbrev @@ jesper.hasselquist@gmail.com
 iabbrev ssig Best regards,<CR>Jesper Hasselquist<CR>jesper.hasselquist@gmail.com<CR>UwU
