@@ -125,8 +125,13 @@ iabbrev ssig Best regards,<CR>Jesper Hasselquist<CR>jesper.hasselquist@gmail.com
 
 " Vimscript file settings ---------------------- {{{
 augroup filetype_vim
+    " Clear autocmds in this group
     autocmd!
+
     autocmd FileType vim setlocal foldmethod=marker
+
+    " Comment
+    autocmd FileType vim nnoremap <buffer> <LocalLeader>c I" <ESC>
 augroup END
 " }}}
 
