@@ -21,7 +21,7 @@ call plug#end()
 
 " Custom functions ----------------------------- {{{
 " Indents file and puts the cursor back to where it was
-function IndentFile()
+function! IndentFile()
     normal! gg=G
     normal! ``
 endfunction
