@@ -68,6 +68,9 @@ set shiftwidth=4
 
 " On pressing tab, insert 4 spaces
 set expandtab
+
+" Highligh groups
+highlight TodoGroup ctermfg=yellow
 " }}}
 
 " Key mappings --------------------------------- {{{
@@ -144,6 +147,12 @@ augroup filetype_javascript
     autocmd FileType javascript nnoremap <buffer> <LocalLeader>c I//<ESC>
     " Autoindent
     autocmd BufWritePre *.js call IndentFile()
+
+    " Highlight TODOs
+    autocmd FileType javascript match TodoGroup /\vTODO.*/
+
+    " Highlight trailing whitespace
+    autocmd FileType javascript match Error /\v +$/
 
     " Set fold method to syntax when file syntax is javascript
     autocmd Syntax javascript setlocal foldmethod=syntax
