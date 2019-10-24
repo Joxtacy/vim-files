@@ -58,7 +58,7 @@ set laststatus=2
 
 " Colors and stuff
 set background=dark
-colorscheme minimalist
+colorscheme gruvbox
 
 " Show existing tab with 4 spaces width
 set tabstop=4
