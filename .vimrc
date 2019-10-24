@@ -111,9 +111,13 @@ onoremap in@ :<C-u>execute "normal! /\\S\\+@\\S\\+\r:noh\rviW"<CR>
 
 " Arrow keys are forbidden!
 noremap <Left> <NOP>
+inoremap <Left> <NOP>
 noremap <Right> <NOP>
+inoremap <Right> <NOP>
 noremap <Up> <NOP>
+inoremap <Up> <NOP>
 noremap <Down> <NOP>
+inoremap <Down> <NOP>
 " }}}
 
 " Random abbreviations ------------------------- {{{
