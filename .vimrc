@@ -118,6 +118,8 @@ noremap <Up> <NOP>
 inoremap <Up> <NOP>
 noremap <Down> <NOP>
 inoremap <Down> <NOP>
+
+nnoremap <BS> :noh<CR>
 " }}}
 
 " Random abbreviations ------------------------- {{{
