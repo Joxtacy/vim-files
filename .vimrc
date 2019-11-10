@@ -161,8 +161,6 @@ augroup filetype_javascript
     autocmd!
     " Comment
     autocmd FileType javascript nnoremap <buffer> <LocalLeader>c I//<ESC>
-    " Autoindent
-    autocmd BufWritePre *.js call IndentFile()
 
     " Highlight TODOs
     autocmd FileType javascript match TodoGroup /\vTODO.*/
@@ -210,7 +208,7 @@ augroup filetype_html
     " Clear autocmds in this group
     autocmd!
     " Autoindent
-    autocmd BufWritePre *.html normal gg=G
+    " autocmd BufWritePre *.html call IndentFile()
     " Comment
     autocmd FileType html nnoremap <buffer> <LocalLeader>c I<!-- <ESC>A --><ESC>
     " Create fold on current tag
