@@ -177,6 +177,30 @@ augroup filetype_javascript
 augroup END
 " }}}
 
+" JSON file setting ---------------------------- {{{
+augroup filetype_json
+    " Clear autocmds in this group
+    autocmd!
+
+    " Highlight trailing whitespace
+    autocmd FileType json match Error /\v +$/
+
+    " Set fold method to syntax when file syntax is json
+    autocmd Syntax json setlocal foldmethod=syntax
+    " Open all folds on syntax json
+    autocmd Syntax json normal zR
+
+    " Show existing tab with 2 spaces width
+    autocmd FileType json set tabstop=2
+
+    " When indenting with '>', use 2 spaces
+    autocmd FileType json set shiftwidth=2
+
+    " On pressing tab, insert 2 spaces
+    autocmd FileType json set expandtab
+augroup END
+" }}}
+
 " Html file settings --------------------------- {{{
 augroup filetype_html
     " Clear autocmds in this group
