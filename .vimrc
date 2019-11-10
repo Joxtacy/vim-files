@@ -71,6 +71,10 @@ set expandtab
 
 " Highligh groups
 highlight TodoGroup ctermfg=yellow
+
+" Set grep program to ripgrep
+set grepprg=rg\ --vimgrep
+set grepformat=%f:%l:%c:%m
 " }}}
 
 " Key mappings --------------------------------- {{{
