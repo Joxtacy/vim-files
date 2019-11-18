@@ -32,6 +32,9 @@ syntax on
 
 set updatetime=100
 
+" Save 200 entries in command history
+set history=200
+
 " Highlight searchresults
 set hlsearch
 
@@ -75,6 +78,10 @@ highlight TodoGroup ctermfg=yellow
 " Set grep program to ripgrep
 set grepprg=rg\ --vimgrep
 set grepformat=%f:%l:%c:%m
+
+" Set Ex command suggestions
+set wildmenu
+set wildmode=full
 " }}}
 
 " Key mappings --------------------------------- {{{
