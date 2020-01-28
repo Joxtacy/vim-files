@@ -16,6 +16,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'airblade/vim-gitgutter'
 " Plug 'plasticboy/vim-markdown'
 Plug 'evanleck/vim-svelte'
+Plug 'itchyny/calendar.vim'
 
 call plug#end()
 
@@ -279,3 +280,7 @@ let g:svelte_indent_script = 0
 let g:svelte_indent_style = 0
 " }}}
 
+" calendar.vim configuration ------------------- {{{
+let g:calendar_google_calendar = 1
+let g:calendar_google_task = 1
+" }}}
