@@ -18,6 +18,9 @@ Plug 'airblade/vim-gitgutter'
 Plug 'evanleck/vim-svelte'
 Plug 'itchyny/calendar.vim'
 
+" Other fun stuff
+Plug 'vim/killersheep'
+
 call plug#end()
 
 " Profiling ------------------------------------ {{{
