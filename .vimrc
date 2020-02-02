@@ -20,6 +20,12 @@ Plug 'itchyny/calendar.vim'
 
 call plug#end()
 
+" Profiling ------------------------------------ {{{
+profile start ~/vim_profiling.log
+profile func *
+profile file *
+" }}}
+
 " Custom functions ----------------------------- {{{
 " Indents file and puts the cursor back to where it was
 function! IndentFile()
