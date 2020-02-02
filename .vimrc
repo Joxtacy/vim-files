@@ -299,4 +299,5 @@ let g:svelte_indent_style = 0
 " calendar.vim configuration ------------------- {{{
 let g:calendar_google_calendar = 1
 let g:calendar_google_task = 1
+source ~/.cache/calendar.vim/credentials.vim
 " }}}
