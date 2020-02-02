@@ -159,6 +159,16 @@ augroup filetype_vim
 augroup END
 " }}}
 
+" Jenkinsfile file settings -------------------- {{{
+augroup filetype_jenkinsfile
+    " Clear autocmds in this group
+    autocmd!
+
+    autocmd FileType Jenkinsfile setlocal shiftwidth=2
+    autocmd FileType Jenkinsfile setlocal tabstop=2
+augroup END
+" }}}
+
 " Markdown file settings ----------------------- {{{
 augroup filetype_markdown
     " Clear autocmds in this group
