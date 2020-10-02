@@ -6,6 +6,7 @@ Plug 'wdhg/dragon-energy'
 Plug 'morhetz/gruvbox'
 Plug 'tomasr/molokai'
 Plug 'crusoexia/vim-monokai'
+Plug 'cormacrelf/vim-colors-github'
 
 " Plugins
 Plug 'sheerun/vim-polyglot'
@@ -70,8 +71,8 @@ set cmdheight=1
 set laststatus=2
 
 " Colors and stuff
-set background=dark
-colorscheme gruvbox
+set background=light
+colorscheme github
 
 " Show existing tab with 4 spaces width
 set tabstop=4
